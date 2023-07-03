@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_tags",
+  "info": {
+    "singularName": "skill-tag",
+    "pluralName": "skill-tags",
+    "displayName": "Skill Tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

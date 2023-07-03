@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timeline_events",
+  "info": {
+    "singularName": "timeline-event",
+    "pluralName": "timeline-events",
+    "displayName": "Timeline Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institutionName": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "occupationTitle": {
+      "type": "string"
+    },
+    "commitment": {
+      "type": "enumeration",
+      "enum": [
+        "Full-Time",
+        "Part-Time",
+        "Contract"
+      ]
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "skillTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill-tag.skill-tag"
+    }
+  }
+}
