@@ -50,6 +50,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::skill-tag.skill-tag"
+    },
+    "location": {
+      "type": "string"
+    },
+    "currentlyHere": {
+      "type": "boolean"
     }
   }
 }
